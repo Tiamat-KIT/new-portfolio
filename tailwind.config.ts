@@ -1,20 +1,24 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
+    content: ['./src/**/*.{js,ts,jsx,tsx}'],
+    plugins: [require("daisyui"),require('@tailwindcss/typography'),],
+    daisyui: {
+        themes: [{
+            light: {
+                ...require("daisyui/dist/base")["[data-theme=light]"],
+                "info": "rgba(165,234,255,0.2)",
+                "base-content": "black",
+            },
+            dracula: {
+                ...require("daisyui/dist/base")["[data-theme=dracula]"],
+                "base-100": "#606060",
+                "base-content": "white",
+                "info": "#0026A1"
+            },
+        }],
+        darkTheme: "dracula"
+    }
 }
+
 export default config
