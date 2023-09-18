@@ -1,4 +1,6 @@
 type LayoutDirectories = "Left" | "Right" | "Modal" | "children" 
-export type LayoutType = {
+type LayoutType = {
     [key in LayoutDirectories]: React.ReactNode
 }
+
+export default LayoutType
