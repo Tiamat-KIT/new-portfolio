@@ -6,7 +6,7 @@
     ],
     // if TS 5.x+
     "moduleResolution": "NodeNext",
-    "allowImportingTsExtensions": true,
+    // "allowImportingTsExtensions": true,
     "module": "NodeNext",
     "noEmit": true,
     "moduleDetection": "force",
