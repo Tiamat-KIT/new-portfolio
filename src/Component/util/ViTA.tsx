@@ -10,6 +10,7 @@ type Props = {
     Default: JSX.Element,
     After: MyProfile
 }
+
 export default function ViTA(Props: Props){
     let TransitionBool: boolean = true
     const ClickEvent = () => {
