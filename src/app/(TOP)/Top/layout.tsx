@@ -3,7 +3,7 @@ import "@/css/global.css"
 import Footer,{FooterItemProps} from '@/Component/util/Footer';
 import ThemeProvide from '@/Component/util/Theme/ThemeProvide';
 import { Metadata } from 'next';
-import { LayoutType } from "../../../type/LayoutProps"
+import LayoutType  from "@/type/LayoutProps"
 import Navbar from '@/Component/util/Navbar';
 import Container from '@/Component/util/Container';
 
