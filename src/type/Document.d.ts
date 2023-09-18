@@ -11,6 +11,9 @@ declare global {
     }
 } */
 
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 type UpdateCallback = () => Promise<any> | void
 
 declare global {
