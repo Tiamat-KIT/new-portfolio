@@ -1,34 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### ログイン機能搭載<br>Next.js v13のテンプレート
 
-## Getting Started
+#### 導入ライブラリについて
+|  ライブラリ名  |  バージョン  |
+| ---- | :----: |
+|  TypeScript  |  4.9.4  |
+|  Next.js  |  13.1.5  |
+| ESLint | 8.32.0 | 
+| NextAuth | 4.19.0 |
+| Firebase | 9.16.0 | 
+| TailwindCSS | 3.2.4 | 
+| daisyUI | 2.50.0 | 
 
-First, run the development server:
+#### 環境設定ファイル(.envファイル)に設定する環境設定変数
+| 環境変数名 | 内容 | 
+| :----: | :----: |
+| GOOGLE_ID | GoogleのCloudProjectのIDデータを入れる |
+| GOOGLE_SECRET | GoogleのCloudProjectのSECRETデータを入れる |
+| NEXTAUTH_SECRET | NextAuthの認証を暗号化するためのハッシュ値を入れる |
+| FIREBASE_API_KEY |　Firebaseプロジェクトのapikey |
+| FIREBASE_AUTHDOMAIN | Firebaseプロジェクトのauthdomain |
+| FIREBASE_PJ_ID | Firebaseプロジェクトのprojectid |
+| FIREBASE_STORAGE_BUCKET | Firebaseプロジェクトのstoragebucket |
+| FIREBASE_MESSAGINGSEND_ID | Firebaseプロジェクトのmessagingsendid |
+| FIREBASE_APP_ID | Firebaseプロジェクトのapplicationid |
+| FIREBASE_MEASUREMENT_ID | Firebaseプロジェクトのmeasurementid |
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+#### このテンプレートリポジトリの目的
+正直いちいちNext.jsの導入からTailwind入れて、daisyUI入れて、NextAuth入れて...
+という手間が面倒くさかったので<br>テンプレートリポジトリにして使いまわしてやろう！！という魂胆です。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### テンプレートに入ってるComponentについての説明
+TailwindCSSの特徴的な面倒くささについて<br>**特定のクラスをいちいち記述しなければならない**
+というものがある。<br>これは、Tailwindの機能の「新しいユーティリティクラスを作る」機能で実装してもよかったが、<br>それだとdaisyUIで設定されているユーティリティクラスとの衝突が発生する懸念があったので<br>コンポーネントとして定義して再利用できるようにした。<br>それがテンプレート内にあるコンポーネントである。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[MyFirebaseProject](https://console.firebase.google.com/u/1/project/test-nextauth-and-firebase/overview)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## OG画像について
+[VercelのOG Image Generation(vercel/og)を利用してOGP画像を作成する](https://zenn.dev/denham/articles/b2378462d54823#ogの生成)
 
-## Learn More
+[Next.jsのImage Generationを利用して、動的にOG画像を作成する](https://www.newt.so/docs/tutorials/nextjs-og-image-generation)
 
-To learn more about Next.js, take a look at the following resources:
+[Next13.3のApp RouterでOG画像のmetaタグを自動生成させる](https://zenn.dev/temasaguru/articles/2968736b5a2f41)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[App RouterのOGP設定方法まとめ [Next.js]](https://zenn.dev/temasaguru/articles/641a10cd5af02a)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[opengraph-image and twitter-image](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#generate-images-using-code-js-ts-tsx)
+#### 以降、修正追記が行われる予定
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+New My portfolio
