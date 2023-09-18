@@ -1,7 +1,7 @@
 "use client"
 
 import { MyProfile } from "@/libs/microcms"
-import React, { FC } from "react"
+import React from "react"
 import parse from "html-react-parser"
 import "../css/profile.css"
 

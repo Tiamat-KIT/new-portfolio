@@ -2,7 +2,7 @@
   "compilerOptions": {
     // Bunでの型定義の追加
     "types": [
-      "bun-types"
+      "bun-types",
     ],
     // if TS 5.x+
     "moduleResolution": "NodeNext",
