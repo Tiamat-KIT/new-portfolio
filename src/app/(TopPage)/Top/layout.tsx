@@ -7,7 +7,7 @@ import LayoutType  from "@/type/LayoutProps"
 import Navbar from '@/Component/util/Navbar';
 import Container from '@/Component/util/Container';
 
-/* const title = "UtakataPortfolio"
+const title = "UtakataPortfolio"
 const description = "泡沫京水のポートフォリオ"
 const opengraph = `${process.env.NEXTAUTH_URL}opengraph-image`
 const twitterimage= `${process.env.NEXTAUTH_URL}twitter-image`
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     site: "@CYUVi1336",
     creator: "@CYUVi1336"
   }
-} */
+} 
 
 export default function RootLayout(props:LayoutType) {
   const Hobby: FooterItemProps[] = [
