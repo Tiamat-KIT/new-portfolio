@@ -3,7 +3,7 @@
 import { MyProfile } from "@/libs/microcms"
 import React from "react"
 import parse from "html-react-parser"
-import "../css/profile.css"
+import "@/css/profile.css"
 
 type Props = {
     ButtonText: string
