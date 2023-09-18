@@ -1,3 +1,4 @@
+"use client"
 import "@/css/global.css"
 // import { SessionProvider } from "next-auth/react";
 import Footer,{FooterItemProps} from '@/Component/util/Footer';
@@ -12,7 +13,7 @@ const description = "泡沫京水のポートフォリオ"
 const opengraph = `${process.env.NEXTAUTH_URL}opengraph-image`
 const twitterimage= `${process.env.NEXTAUTH_URL}twitter-image`
 
-export const metadata: Metadata = {
+/* export const metadata: Metadata = {
   title: {
     default: title,
     template: `%s - ${title}`
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     site: "@CYUVi1336",
     creator: "@CYUVi1336"
   }
-} 
+}  */
 
 export default function RootLayout(props:LayoutType) {
   const Hobby: FooterItemProps[] = [
