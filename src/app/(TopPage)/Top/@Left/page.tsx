@@ -1,4 +1,3 @@
-"use client"
 import { getProfile } from "@/libs/microcms"
 import ViTA from "@/Component/util/ViTA"
 
