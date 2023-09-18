@@ -1,4 +1,4 @@
-type LayoutDirectories = "Left" | "Right" | "Modal" | "children" 
+type LayoutDirectories = "Left" | "Right" | "children" 
 type LayoutType = {
     [key in LayoutDirectories]: React.ReactNode
 }

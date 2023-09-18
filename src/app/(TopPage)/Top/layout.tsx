@@ -60,7 +60,6 @@ export default function RootLayout(props:LayoutType) {
                 <div className='w-1/2 border-r-2'>{props.Left}</div>
                 <div className='w-1/2'>{props.Right}</div>
               </span>
-              {props.Modal}
               {props.children}
           </ThemeProvide>
           <div className='divider'/>
