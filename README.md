@@ -45,6 +45,6 @@ TailwindCSSの特徴的な面倒くささについて<br>**特定のクラスを
 [App RouterのOGP設定方法まとめ [Next.js]](https://zenn.dev/temasaguru/articles/641a10cd5af02a)
 
 [opengraph-image and twitter-image](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#generate-images-using-code-js-ts-tsx)
-#### 以降、修正追記が行われる予定
+#### Bun移植
 
 New My portfolio
