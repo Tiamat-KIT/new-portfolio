@@ -1,8 +1,7 @@
 "use client"
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
 
 import { MyProfile } from "@/libs/microcms"
+import React, { FC } from "react"
 import parse from "html-react-parser"
 import "../css/profile.css"
 
