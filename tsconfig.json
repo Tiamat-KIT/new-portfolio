@@ -1,6 +1,3 @@
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
-
 {
   "compilerOptions": {
     // Bunでの型定義の追加
