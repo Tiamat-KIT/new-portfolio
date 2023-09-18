@@ -46,5 +46,5 @@ TailwindCSSの特徴的な面倒くささについて<br>**特定のクラスを
 
 [opengraph-image and twitter-image](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#generate-images-using-code-js-ts-tsx)
 #### Bun移植
-
+Bunで動かしたらいい感じになるはず？
 New My portfolio
