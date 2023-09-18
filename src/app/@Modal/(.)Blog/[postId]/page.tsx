@@ -1,5 +1,6 @@
-import parse from "html-react-parser";
+import { notFound } from "next/navigation";
 import { getDetail, getListData } from "@/libs/microcms";
+import Modal from "@/Component/Modal";
 
 // キャッシュを利用しない
 export const revalidate = 0;
@@ -19,18 +20,15 @@ export async function generateStaticParams() {
 export default async function StaticDetailPage({
  params: { postId },
 }: {
- params: { postId: string };
+ params: { postId: string }
 }) {
  const post = await getDetail(postId);
 
  if (!post) {
-  console.log("存在しないページです")
+  notFound();
  }
 
  return (
-  <div className="prose content-center mx-auto">
-   <h1 className="text-3xl">{post.title}</h1>
-   <div>{parse(post.body)}</div>
-  </div>
+    <Modal Post={post} />
  );
 }

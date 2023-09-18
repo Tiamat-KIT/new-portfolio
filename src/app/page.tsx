@@ -1,7 +1,8 @@
-"use client"
-
 export default function Page(){
     return (
-        <h1 className="text-3xl">TOPページに遷移します</h1>
+        <>
+        </>
     )
 }
+
+// https://azukiazusa.dev/blog/nextjs-interception-routes/

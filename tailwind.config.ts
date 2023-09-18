@@ -14,7 +14,7 @@ const config: Config = {
                 ...require("daisyui/dist/base")["[data-theme=dracula]"],
                 "base-100": "#606060",
                 "base-content": "white",
-                "info": "#0026A1"
+                "info": "#0026A1",
             },
         }],
         darkTheme: "dracula"
