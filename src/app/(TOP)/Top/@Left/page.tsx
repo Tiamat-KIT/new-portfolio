@@ -4,7 +4,7 @@ import { Suspense,lazy } from "react"
 export default async function Left(){
 
     const {contents} = await getProfile()
-    const VisionTransitonComponent = lazy(() => import("@/Component/ViTA"))
+    const VisionTransitonComponent = lazy(() => import("../../../../Component/ViTA.tsx"))
     return (
         <>
             <Suspense>
