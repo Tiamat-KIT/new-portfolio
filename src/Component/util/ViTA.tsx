@@ -23,7 +23,7 @@ export default function ViTA(Props: Props){
 
     return (
         <>
-            <button className="btn glass border-base-content text-base-content" onClick={ClickEvent}>{Props.ButtonText}</button>
+            <button className="btn glass border-base-content text-base-content mx-4" onClick={ClickEvent}>{Props.ButtonText}</button>
             <div id="default">{Props.Default}</div>
             <article id="after" className="prose" hidden>
                 {parse(Props.After.text)}
