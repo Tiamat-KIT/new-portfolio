@@ -5,6 +5,7 @@ require("dotenv").config() */
 const nextConfig = {
   experimental: {
     serverActions: true,
+    typedRoutes: true
   },
   images: {
     domains: ["lh3.googleusercontent.com","daisyui.com","images.microcms-assets.io"]
