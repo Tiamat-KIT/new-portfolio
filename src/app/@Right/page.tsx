@@ -3,12 +3,14 @@ import Image from "next/image"
 import { getListData } from "@/libs/microcms"
 import { Route } from "next"
 
+export const revalidate = 0
+
 export default async function Right(){
     const {contents} = await getListData()
     
     return (
         <>
-            <article>
+            <article className="grid grid-cols-2 gap-4">
                 {contents.map((item) => {
                     return (
                         <>
