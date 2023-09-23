@@ -2,7 +2,7 @@ import "@/css/global.css"
 // import { SessionProvider } from "next-auth/react";
 import Footer,{FooterItemProps} from '@/Component/util/Footer';
 import ThemeProvide from '@/Component/util/Theme/ThemeProvide';
-import { Metadata } from 'next';
+import { Metadata, Route } from 'next';
 import LayoutType  from "@/type/LayoutProps"
 import Navbar, { NavbarLinkObject } from '@/Component/util/Navbar';
 import Container from '@/Component/util/Container';
@@ -50,7 +50,10 @@ export default function RootLayout(props:LayoutType) {
   ]
   
   const NavItemList: NavbarLinkObject[] = [
-    {href: "/",LinkName: "TOP"}
+    {
+      href: "/", 
+      LinkName: "TOP"
+    }
   ]
   return (
     <html lang="ja" suppressHydrationWarning>
