@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { getListData } from "@/libs/microcms"
+import { Route } from "next"
 
 export default async function Right(){
     const {contents} = await getListData()
@@ -21,7 +22,7 @@ export default async function Right(){
                                     />
                                 </figure>
                                 <div className="card-body">
-                                    <Link className="card-title" href={`Blog/${item.id}`}>{item.title}</Link>
+                                    <Link className="card-title" href={`Blog/${item.id}` as Route}>{item.title}</Link>
                                 </div>
                             </div>
                         </>
