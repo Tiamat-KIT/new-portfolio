@@ -24,7 +24,7 @@ export default function Navbar(
         return(
             <header className={`navbar bg-base-50 ${color}`}>
                 <nav className="flex-1">
-                    <Link href="/" className="btn btn-ghost text-md">MyPage</Link>
+                    <Link href={"/" as Route}  className="btn btn-ghost text-md">MyPage</Link>
                     {LinkObjects?.map((LinkObj) => {
                         return (
                             <>
