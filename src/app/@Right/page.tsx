@@ -2,8 +2,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { getListData } from "@/libs/microcms"
 import { Route } from "next"
+import BlogCard from "@/Component/util/BlogCard";
 
-export const revalidate = 0
+export const fetchCache = 'default-no-store';
 
 export default async function Right(){
     const {contents} = await getListData()
@@ -13,21 +14,9 @@ export default async function Right(){
             <article className="grid grid-cols-2 gap-4">
                 {contents.map((item) => {
                     return (
-                        <>
-                            <div className="card w-50 bg-base-100 shadow-xl glass" key={item.id}>
-                                <figure>
-                                    <Image 
-                                        src={item.img.url} 
-                                        height={125}
-                                        width={125}
-                                        alt={item.title}
-                                    />
-                                </figure>
-                                <div className="card-body">
-                                    <Link className="card-title" href={`Blog/${item.id}` as Route}>{item.title}</Link>
-                                </div>
-                            </div>
-                        </>
+                        <div key={item.id}>
+                            <BlogCard title={item.title} link={item.id} img={item.img}/>
+                        </div>
                     )
                 })}
             </article>
