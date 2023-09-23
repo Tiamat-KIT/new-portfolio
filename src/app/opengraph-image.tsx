@@ -9,7 +9,7 @@ export const size = {
     height: 600
 }
 
-export default function (){
+export default () => {
     return new ImageResponse(
         (
         <div
