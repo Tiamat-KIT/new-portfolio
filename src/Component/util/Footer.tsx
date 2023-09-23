@@ -1,8 +1,9 @@
+import { Route } from "next"
 import Link from "next/link"
 
 export type FooterItemProps = {
     text: string,
-    url: string
+    url: Route
 }
 
 export default function Footer({

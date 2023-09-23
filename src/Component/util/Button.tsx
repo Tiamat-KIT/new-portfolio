@@ -1,3 +1,4 @@
+import { Route } from "next"
 import Link from "next/link"
 
 export default function Button({
@@ -15,7 +16,7 @@ export default function Button({
     Activate?:boolean,
     Animate?:boolean,
     LinkBool: boolean,
-    LinkUrl?: string
+    LinkUrl?: Route
 }){
     const Theme = ButtonTheme ? `btn-${ButtonTheme}` : ""
     const VisualGhost = Ghost ? " btn-ghost" : ""
