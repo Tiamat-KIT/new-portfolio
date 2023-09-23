@@ -7,7 +7,7 @@ import ThemeChangeButton from "./Theme/ThemeButton";
 import type { Route } from "next";
 
 export type NavbarLinkObject = {
-    href: Route | "/",
+    href: Route,
     LinkName: string
 }
 

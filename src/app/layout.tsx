@@ -49,18 +49,18 @@ export default function RootLayout(props:LayoutType) {
     {text: "LAPRAS",url: "https://lapras.com/public/UW09DHN"}
   ]
   
-  const NavItemList: NavbarLinkObject[] = [
+  /* const NavItemList: NavbarLinkObject[] = [
     {
       href: "/", 
       LinkName: "TOP"
     }
-  ]
+  ] */
   return (
     <html lang="ja" suppressHydrationWarning>
       <body>
           {/* <SessionProvider> */}
           <ThemeProvide>
-          <Navbar LinkObjects={NavItemList}/>
+          <Navbar /* LinkObjects={NavItemList} *//>
               <span className="flex w-screen space-x-4 mt-3">
                 <div className='w-1/2 border-r-2'>{props.Left}</div>
                 <div className='w-1/2'>{props.Right}</div>
