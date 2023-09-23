@@ -18,8 +18,8 @@ export default async function Right(){
                                 <figure>
                                     <Image 
                                         src={item.img.url} 
-                                        height={item.img.height as number / 2 }
-                                        width={item.img.width as number / 2 }
+                                        height={255}
+                                        width={255}
                                         alt={item.title}
                                     />
                                 </figure>
