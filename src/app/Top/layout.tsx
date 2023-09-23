@@ -4,7 +4,7 @@ import Footer,{FooterItemProps} from '@/Component/util/Footer';
 import ThemeProvide from '@/Component/util/Theme/ThemeProvide';
 import { Metadata } from 'next';
 import LayoutType  from "@/type/LayoutProps"
-import Navbar from '@/Component/util/Navbar';
+import Navbar, { NavbarLinkObject } from '@/Component/util/Navbar';
 import Container from '@/Component/util/Container';
 
 const title = "UtakataPortfolio"
@@ -49,12 +49,19 @@ export default function RootLayout(props:LayoutType) {
     {text: "LAPRAS",url: "https://lapras.com/public/UW09DHN"}
   ]
 
+  const NavObjList: NavbarLinkObject[] = [
+    {
+      href: "/Top",
+      LinkName: "MyDevContent"
+    }
+  ]
+
   return (
     <html lang="ja" suppressHydrationWarning>
       <body>
           {/* <SessionProvider> */}
           <ThemeProvide>
-          <Navbar />
+          <Navbar LinkObjects={NavObjList}/>
               <span className="flex w-screen space-x-4 mt-3">
                 <div className='w-1/2 border-r-2'>{props.Left}</div>
                 <div className='w-1/2'>{props.Right}</div>
