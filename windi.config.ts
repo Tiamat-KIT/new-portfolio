@@ -5,7 +5,8 @@ import typography from "windicss/plugin/typography"
 
 export default defineConfig({
   extract: {
-    include: ['src/**/*.{js,ts,jsx,tsx}'],
+    include: ['src/**/*.{js,ts,jsx,tsx,css}'],
+    exclude: ["node_modules",".git",".next"]
   },
   safelist: ['prose','prose-sm','m-auto'],
   darkMode: 'class',

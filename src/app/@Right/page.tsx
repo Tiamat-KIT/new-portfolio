@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { getListData } from "@/libs/microcms"
 import { Route } from "next"
 import BlogCard from "@/Component/util/BlogCard";

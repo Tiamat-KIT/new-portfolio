@@ -27,7 +27,7 @@ export default function ViTA(Props: Props){
             <button className="btn glass" onClick={ClickEvent}>{Props.ButtonText}</button>
             <div id="default">{Props.Default}</div>
             <article id="after" className="prose" hidden>
-                {parse(Props.After.text)}
+                <div className="dark:text-white">{parse(Props.After.text)}</div>
                 <p>View Transition APIを使用しています</p>
             </article>
         </>

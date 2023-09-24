@@ -6,6 +6,7 @@ import { Metadata, Route } from 'next';
 import LayoutType  from "@/type/LayoutProps"
 import Navbar, { NavbarLinkObject } from '@/Component/util/Navbar';
 import Container from '@/Component/util/Container';
+import "windicss"
 
 const title = "UtakataPortfolio"
 const description = "泡沫京水のポートフォリオ"
@@ -61,6 +62,7 @@ export default function RootLayout(props:LayoutType) {
           {/* <SessionProvider> */}
           <ThemeProvide>
           <Navbar /* LinkObjects={NavItemList} *//>
+              <p></p>
               <span className="flex w-screen space-x-4 mt-3">
                 <div className='w-1/2 border-r-2'>{props.Left}</div>
                 <div className='w-1/2'>{props.Right}</div>

@@ -3,7 +3,6 @@ import React, { useCallback,useRef,useEffect,MouseEventHandler } from "react"
 import parse from "html-react-parser";
 import { useRouter } from "next/navigation"
 import { BlogData } from "@/libs/microcms"
-import Image from "next/image";
 
 export default function Modal(
     {Post}:{Post:BlogData}

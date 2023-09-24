@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 /* const { resolve } = require("path")
 require("dotenv").config() */
+const WindiCSSWebpackPlugin =  require("windicss-webpack-plugin") 
 
 const nextConfig = {
   experimental: {
@@ -14,6 +15,10 @@ const nextConfig = {
     "@next-auth/firebase-adapter",
     "microcms-js-sdk",
   ],
+  webpack(config){
+    config.plugins.push(new WindiCSSWebpackPlugin())
+    return config
+  }
 }
 
 module.exports = nextConfig
